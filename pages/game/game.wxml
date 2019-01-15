@@ -1,0 +1,4 @@
+<!--pages/game/game.wxml-->
+<view class="container">
+  中国游戏
+</view>
