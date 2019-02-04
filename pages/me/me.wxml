@@ -7,7 +7,7 @@
     </block>
   </view>
   
-  <view class="my-li">
+  <view class="my-li" bindtap="getOrders">
     <view>
       <image src='../../images/order.svg'></image>
     </view>
@@ -19,7 +19,7 @@
     </view>
   </view>
 
-  <view class="my-li">
+  <view class="my-li" bindtap="getTrail">
     <view>
       <image src='../../images/trail.svg'></image>
     </view>

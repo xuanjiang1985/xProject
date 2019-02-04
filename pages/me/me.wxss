@@ -9,6 +9,7 @@
 
 .userinfo-btn {
   margin: 50rpx 0;
+  color: #8b8888;
   }
 
 .userinfo-avatar {
@@ -28,8 +29,8 @@
   align-items: center;
   height: 112rpx;
   flex-direction: row;  
-  color: #d6d6d6;
-  border-bottom: 1px solid #d6d6d6;
+  color: #949393;
+  border-bottom: 1px solid #e7e6e6;
 }
 
 .my-li image {
