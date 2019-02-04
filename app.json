@@ -3,12 +3,37 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/article/article",
-    "pages/game/game"
+    "pages/game/game",
+    "pages/me/me"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "二狗",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首 页",
+        "iconPath": "/images/index.png",
+        "selectedIconPath": "/images/index-active.png"
+      },
+      {
+        "pagePath": "pages/game/game",
+        "text": "红 手",
+        "iconPath": "/images/red-hand-80.png",
+        "selectedIconPath": "/images/red-hand-active-80.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我 的",
+        "iconPath": "/images/me.png",
+        "selectedIconPath": "/images/me-active.png"
+      }
+    ]
   }
 }

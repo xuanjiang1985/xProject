@@ -1,0 +1,62 @@
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#f75454;
+  padding: 20rpx 0;
+  margin-bottom: 30rpx;
+}
+
+.userinfo-btn {
+  margin: 50rpx 0;
+  }
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  align-items: center;
+  margin-top: 10rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color:#ffffff;
+}
+
+.my-li {
+  display: flex;
+  align-items: center;
+  height: 112rpx;
+  flex-direction: row;  
+  color: #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.my-li image {
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.my-li view:nth-child(1) {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.my-li view:nth-child(2) {
+  flex-grow: 5;
+}
+
+.my-li view:nth-child(3) {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+  padding-right: 10rpx;
+}
+
+.my-li-rights {
+  height: 50px;
+  width: 50rpx;
+}

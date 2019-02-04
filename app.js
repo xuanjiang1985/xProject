@@ -4,9 +4,9 @@ import { httpRequest } from 'utils/util.js'
 App({
   onLaunch: function () {
     // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
+    // var logs = wx.getStorageSync('logs') || []
+    // logs.unshift(Date.now())
+    // wx.setStorageSync('logs', logs)
 
     // 获取用户信息
     wx.getSetting({
@@ -41,18 +41,17 @@ App({
   getToken: function (code) {
     var that = this
     wx.request({
-      url: this.globalData.host + '/h5/xcx/token',
+      url: this.globalData.host + '/v1/xcx/token',
       method: 'POST',
       data: {
-        code: code, //将code发给后台拿token
-        user_info: this.globalData.userInfo
+        code: code //将code发给后台拿token
       },
       header: {
         'content-type': 'application/json' // 默认值
       },
       success: function (res) {
         // 存token
-        // console.log(res.data)
+         console.log(res.data)
         let response = res.data
         that.globalData.token = response.content.token
       },

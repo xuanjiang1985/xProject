@@ -7,4 +7,7 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+  back: function () {
+    console.log(1)
+  }
 });

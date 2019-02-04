@@ -1,0 +1,34 @@
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="userinfo-btn"> 获取头像 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  
+  <view class="my-li">
+    <view>
+      <image src='../../images/order.svg'></image>
+    </view>
+    <view>
+      <text>我的订单</text>
+    </view>
+    <view>
+      <image src='../../images/arrow-right.svg'></image>
+    </view>
+  </view>
+
+  <view class="my-li">
+    <view>
+      <image src='../../images/trail.svg'></image>
+    </view>
+    <view>
+      <text>我的轨迹</text>
+    </view>
+    <view>
+      <image src='../../images/arrow-right.svg'></image>
+    </view>
+  </view>
+  
+</view>

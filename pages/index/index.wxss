@@ -24,3 +24,7 @@
   color: red;
   font-size: 50rpx;
 }
+.img-task {
+  width: 50rpx;
+  height: 50rpx;
+}
